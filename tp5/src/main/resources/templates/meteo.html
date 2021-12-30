@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns:th=" http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Meteo</title>
+</head>
+<body>
+
+<h1>
+</h1>
+<div th:insert="~{addresses::MonFragment}" class="navbar"> </div>
+
+<div class="container">
+    <p th:text="'J'aimerais l'adresse : '+${oneAddress}+'!'"/>
+    <table>
+        <tr>
+            <th>
+                <h4>Méteo du jour</h4>
+            </th>
+        </tr>
+        <tr>
+            <td style="width: 45%;">
+                <div class="container">
+                    <p>Adresse : </p>
+                    <p th:text="${name}"></p>
+                    <p th:text=" ${city}"></p>
+                    <p th:text="'Latitude ' + ${lat} "></p>
+                    <p th:text="'Longitude ' + ${lon} "></p>
+                    <hr>
+                    <p th:text="'Le temps est ' + ${weather}"></p>
+
+                    <p th:text="'Température minimale : ' + ${tmin} + '°C' "></p>
+                    <p th:text="'Température maximale : ' + ${tmax} + '°C' "></p>
+
+                    <p th:text="'Il y a ' + ${probarain} + ' de chance qu'il pleuve' "></p>
+
+                </div>
+            </td>
+        </tr>
+    </table>
+</div>
+
+</body>
+</html>

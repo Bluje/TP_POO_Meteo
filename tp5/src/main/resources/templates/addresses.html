@@ -1,0 +1,19 @@
+<! DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head >
+    <title> Addresses </title>
+        <meta http-equiv ="Content-Type" content ="text /html;charset=UTF-8" />
+        </head>
+        <body>
+        <nav th:fragment="MonFragment">
+            <a  href = "/greeting" > Greetings </a>
+            <a  href = "/addresses" > Addresses </a>
+            <a  href = "/meteo" > Ma météo </a>
+        </nav>
+        <h1> Les differentes adresses </h1>
+        <ul th:each="address:${allAddresses}">
+            <li th:text="${address.content}" />
+            <li th:text="${address.auteur}"/>
+        </ul>
+        </body>
+</html>
