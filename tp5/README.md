@@ -55,21 +55,26 @@ Ensuite on relance l'IDE pour pouvoir appliquer ces changements.
 
 On télécharge les fichiers bootstrap à part du site "https://getbootstrap.com/docs/3.3/getting-started/", puis on mets ces fichiers dans le dossier static des ressources
 
-![img.png](img.png)
+
 
 
 ////////////////////////////////////////////////////////////////////
 
 TP4
 #Etape 6
+
 ###— Faut-il une clé API pour appeler MeteoConcept ?
 Oui, car il y a besoin d'un "token" pour pouvoir accéder à la base de données où sont stockées les informations de météo
+
 ###— Quelle URL appeler ?
 Il faut appeler l'URL de l'API meteo-concept en précisant les données de localisation de l'endroit que l'on souhaite
+
 ###— Quelle m´ethode HTTP utiliser ?
 On utilise la méthode http "get" pour pouvoir y préciser les données (de localisation) souhaitées
+
 ###— Comment passer les paramètres d’appels ?
 Pour passer les paramètres d'appel, on concatène les différents éléments.
+
 ###— Où est l’information dont j’ai besoin dans la r´eponse :
     ####— Pour afficher la temp´erature du lieu vis´e par les coordonn´ees GPS
         Cela se trouve au niveau de "weather".
